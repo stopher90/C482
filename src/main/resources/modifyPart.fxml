@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="585.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ims.c482.modifyPartController">
+   <children>
+      <Text layoutX="50.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <RadioButton fx:id="inHouse" layoutX="168.0" layoutY="55.0" mnemonicParsing="false" onAction="#inHouseClick" selected="true" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="inOut" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outsource" layoutX="297.0" layoutY="55.0" mnemonicParsing="false" onAction="#outsourceClick" text="Outsourced" toggleGroup="$inOut" />
+      <Label fx:id="modID" layoutX="75.0" layoutY="121.0" text="ID" />
+      <Label fx:id="modName" layoutX="75.0" layoutY="169.0" text="Name" />
+      <Label fx:id="modStock" layoutX="75.0" layoutY="215.0" text="Inv" />
+      <Label fx:id="modPrice" layoutX="75.0" layoutY="264.0" text="Price/Cost" />
+      <Label fx:id="modMax" layoutX="75.0" layoutY="314.0" text="Max" />
+      <Label fx:id="modSwitchLabel" layoutX="75.0" layoutY="368.0" text="Machine ID" />
+      <TextField fx:id="modPrtID" disable="true" editable="false" layoutX="129.0" layoutY="117.0" promptText="Auto Gen - Disabled" />
+      <TextField fx:id="modPrtName" layoutX="129.0" layoutY="165.0" />
+      <TextField fx:id="modPrtStock" layoutX="129.0" layoutY="211.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="modPrtPrice" layoutX="136.0" layoutY="260.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="modPrtMax" layoutX="136.0" layoutY="310.0" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="modSwitchField" layoutX="156.0" layoutY="364.0" prefHeight="25.0" prefWidth="130.0" />
+      <Label fx:id="modMin" layoutX="325.0" layoutY="314.0" text="Min" />
+      <TextField fx:id="modPrtMin" layoutX="359.0" layoutY="310.0" prefHeight="25.0" prefWidth="100.0" />
+      <Button fx:id="modSaveButton" layoutX="289.0" layoutY="417.0" mnemonicParsing="false" onAction="#modSaveBtn" text="Save" />
+      <Button fx:id="modCancel" layoutX="370.0" layoutY="417.0" mnemonicParsing="false" onAction="#modCancelBtn" text="Cancel" />
+   </children>
+</AnchorPane>
